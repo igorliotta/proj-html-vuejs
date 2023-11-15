@@ -1,13 +1,26 @@
 <script>
+// Importazione dei singoli componenti
+import PageHeader from './components/PageHeader.vue';
+import { store } from './store';
 
+// Registrazione dei singoli componenti
+export default {
+  components: {
+    PageHeader,
+  },
+  data() {
+    return {
+      store: store,
+    }
+  }
+}
 </script>
 
 <template>
-  <div>
-     Ciao
-  </div>
+  <PageHeader />
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 
+@use './styles/general.scss'
 </style>
