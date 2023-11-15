@@ -17,7 +17,7 @@ export default {
 </script>
 
 <template>
-  <PageHeader />
+  <PageHeader :item="menuItem" />
 </template>
 
 <style lang="scss">
