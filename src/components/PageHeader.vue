@@ -39,6 +39,7 @@ export default {
                         </figure>
                         <figure class="header-icon-container">
                             <img class="header-icon" :src="store.menuCartSrc" alt="">
+                            <div class="number-cart">0</div>
                         </figure>
                     </div>
                 </div>
@@ -48,7 +49,9 @@ export default {
             <div class="row">
                 <ul class="col first">
                     <li class="social-logo-container" v-for="socialsSrc in store.socialsSrc">
-                        <img class="social-logo" :src="socialsSrc" alt="">
+                        <a href="#">
+                            <img class="social-logo" :src="socialsSrc" alt="">
+                        </a>
                     </li>
                 </ul>
                 <div class="col growed">
@@ -56,11 +59,15 @@ export default {
                     <h1 class="title">{{ store.headerTitle }}</h1>
                     <div class="btn-container">
                         <div class="btn">
-                            Read More
-                            <img class="arrow-src" :src="store.arrowRightSrc" alt="">
+                            <a href="#">
+                                Read More
+                                <img class="arrow-src" :src="store.arrowRightSrc" alt="">
+                            </a>
                         </div>
                         <div class="circle">
-                            <img class="play-src" :src="store.playBtnSrc" alt="">
+                            <a href="#">
+                                <img class="play-src" :src="store.playBtnSrc" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -225,11 +232,27 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
     }
 
     .header-icon {
         width: 10px;
         color: black;
+    }
+
+    .number-cart {
+        width: 20px;
+        aspect-ratio: 1;
+        background-color: #4350FB;
+        color: white;
+        font-size: 9px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        position: absolute;
+        top: -10px;
+        right: -8px;
     }
 }
 </style>
