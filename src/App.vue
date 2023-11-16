@@ -2,8 +2,9 @@
 // Importazione dei singoli componenti
 import PageHeader from './components/PageHeader.vue';
 import PageFooter from './components/PageFooter.vue';
-import Games from './components/Games.vue';
-import NewsLetter from './components/NewsLetter.vue';
+// import Games from './components/Games.vue';
+// import NewsLetter from './components/NewsLetter.vue';
+import MainContent from './components/MainContent.vue';
 import { store } from './store';
 
 // Registrazione dei singoli componenti
@@ -11,8 +12,9 @@ export default {
   components: {
     PageHeader,
     PageFooter,
-    Games,
-    NewsLetter,
+    // Games,
+    MainContent,
+    // NewsLetter,
   },
   data() {
     return {
@@ -24,7 +26,9 @@ export default {
 
 <template>
   <PageHeader :item="menuItem" />
-  <Games :item="gameLogos"/>
+  <!-- <Games :item="gameLogos"/> -->
+  <!-- <NewsLetter /> -->
+  <MainContent />
   <PageFooter />
 </template>
 

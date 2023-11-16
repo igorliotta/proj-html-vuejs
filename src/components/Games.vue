@@ -33,10 +33,12 @@ export default {
 <style lang="scss" scoped>
 .games {
     width: 850px;
-    margin: 0 auto;
     padding: 20px 40px;
     background-color: #202046;
-    margin-top: -75px;
+    position: absolute;
+    bottom: 260px;
+    right: 330px;
+    margin: 0 auto;
 
     .row {
         display: flex;

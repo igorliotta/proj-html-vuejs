@@ -1,7 +1,11 @@
 <script>
 import { store } from '../store';
+// import Games from './Games.vue';
 
 export default {
+    // components: {
+    //     Games,
+    // },
     props: {
         item: {
             type: Array,
@@ -75,6 +79,7 @@ export default {
             </div>
         </div>
     </section>
+    <!-- <Games /> -->
 </template>
 
 <style lang="scss" scoped>

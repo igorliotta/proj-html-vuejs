@@ -5,6 +5,9 @@ export const store = reactive({
     menuSearchSrc: '../img/search.svg',
     menuCartSrc: '../img/cart.svg',
     messageSrc: '../img/message.svg',
+    expirienceImg: '../img/exprince.jpg',
+    exprienceShapeImg: '../img/exprience-shape.png',
+    okSrc: '../img/ok.svg',
     menuItems: [
         {
             name: 'Home',
