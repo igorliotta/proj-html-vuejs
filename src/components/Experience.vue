@@ -64,6 +64,7 @@ export default {
         width: 850px;
         margin: 0 auto;
         padding-top: 130px;
+        padding-bottom: 20px;
 
         .row {
             display: flex;

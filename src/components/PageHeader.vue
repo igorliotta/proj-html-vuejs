@@ -180,7 +180,7 @@ export default {
     width: 850px;
     margin: 0 auto;
     margin-bottom: 50px;
-    padding: 5px 0;
+    padding: 20px 0;
 
 
     .row {

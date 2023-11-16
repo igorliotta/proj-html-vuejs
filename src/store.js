@@ -43,5 +43,10 @@ export const store = reactive({
     arrowRightSrc: '../img/image-12.svg',
     playBtnSrc: '../img/image-9.svg',
     gameLogos: ['../img/1.png','../img/2.png','../img/3.png','../img/4.png','../img/5.png','../img/6.png'],
+    vectorBgSrc: '../img/Vector.png',
+    featureLiveSrc: '../img/feature1.png',
+    featureMonitorSrc: '../img/feature2.png',
+    featureJoypadSrc: '../img/feature3.png',
+    featureAwardsSrc: '../img/feature4.png',
 
 })
