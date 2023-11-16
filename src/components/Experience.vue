@@ -42,13 +42,17 @@ export default {
                         </li>
                     </ul>
                     <div class="btn-container">
-                        <div class="btn-discover">
-                            Discover more
-                            <img class="arrow-src" :src="store.arrowRightSrc" alt="">
-                        </div>
-                        <div class="circle">
-                            <img class="play-src" :src="store.playBtnSrc" alt="">
-                        </div>
+                        <a href="#">
+                            <div class="btn-discover">
+                                Discover more
+                                <img class="arrow-src" :src="store.arrowRightSrc" alt="">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="circle">
+                                <img class="play-src" :src="store.playBtnSrc" alt="">
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
