@@ -1,7 +1,11 @@
 <script>
 import { store } from '../store';
+import NewsLetter from './NewsLetter.vue';
 
 export default {
+    components: {
+        NewsLetter,
+    },
     props: {
         item: {
             type: Array,
@@ -53,6 +57,7 @@ export default {
             </div>
         </footer>
     </section>
+    <NewsLetter class="newsletter"/>
 </template>
 
 <style lang="scss" scoped>
@@ -65,7 +70,6 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-  
 }
 
 .page-footer {
@@ -141,5 +145,8 @@ export default {
     }
 }
 
+.newsletter {
+    margin-top: -270px;
+}
 
 </style>

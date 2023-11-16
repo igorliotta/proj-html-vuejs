@@ -198,12 +198,13 @@ export default {
 
         .navbar {
             color: white;
-            font-size: 13px;
+            font-size: 10px;
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 10px;
+            gap: 5px;
             padding: 3px 10px;
+            text-transform: uppercase;
         }
     }
 

@@ -4,6 +4,7 @@ export const store = reactive({
     menuLogoSrc: '../img/menulogo.png',
     menuSearchSrc: '../img/search.svg',
     menuCartSrc: '../img/cart.svg',
+    messageSrc: '../img/message.svg',
     menuItems: [
         {
             name: 'Home',
@@ -38,5 +39,6 @@ export const store = reactive({
     headerTitle: 'Are you ready for your next challenge?',
     arrowRightSrc: '../img/image-12.svg',
     playBtnSrc: '../img/image-9.svg',
-    gameLogos: ['../img/1.png','../img/2.png','../img/3.png','../img/4.png','../img/5.png','../img/6.png']
+    gameLogos: ['../img/1.png','../img/2.png','../img/3.png','../img/4.png','../img/5.png','../img/6.png'],
+
 })
