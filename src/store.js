@@ -41,6 +41,7 @@ export const store = reactive({
     socialsSrc: ['../img/facebook.svg','../img/twitter.svg','../img/linkedin.svg','../img/instagram.svg'],
     headerTitle: 'Are you ready for your next challenge?',
     arrowRightSrc: '../img/image-12.svg',
+    arrowLeftSrc: '../img/arrowleft.svg',
     playBtnSrc: '../img/image-9.svg',
     gameLogos: ['../img/1.png','../img/2.png','../img/3.png','../img/4.png','../img/5.png','../img/6.png'],
     vectorBgSrc: '../img/Vector.png',
@@ -48,5 +49,8 @@ export const store = reactive({
     featureMonitorSrc: '../img/feature2.png',
     featureJoypadSrc: '../img/feature3.png',
     featureAwardsSrc: '../img/feature4.png',
+    previewVideoStreamSrc: '../img/v-small1.png',
+    playStreamSrc: '../img/play.svg',
+    stream2Src: '../img/v-small2.png',
 
 })

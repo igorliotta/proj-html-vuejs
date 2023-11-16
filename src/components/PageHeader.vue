@@ -69,9 +69,7 @@ export default {
                             </a>
                         </div>
                         <div class="circle">
-                            <a href="#">
                                 <img class="play-src" :src="store.playBtnSrc" alt="">
-                            </a>
                         </div>
                     </div>
                 </div>
