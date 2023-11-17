@@ -6,6 +6,7 @@ export const store = reactive({
     arrowRightSrc: '../img/image-12.svg',
     arrowLeftSrc: '../img/arrowleft.svg',
     playBtnSrc: '../img/image-9.svg',
+    playGreenSrc: '../img/play-green.svg',
     menuSearchSrc: '../img/search.svg',
     menuCartSrc: '../img/cart.svg',
     messageSrc: '../img/message.svg',
@@ -13,6 +14,7 @@ export const store = reactive({
     exprienceShapeImg: '../img/exprience-shape.png',
     okSrc: '../img/ok.svg',
     vectorBgSrc: '../img/Vector.png',
+    vector2BgSrc: '../img/prontfolio-vector.png',
     featureLiveSrc: '../img/feature1.png',
     featureMonitorSrc: '../img/feature2.png',
     featureJoypadSrc: '../img/feature3.png',
@@ -113,6 +115,10 @@ export const store = reactive({
             messageSrc: '../img/message-black.svg',
             id: '3',
         },
-    ]
+    ],
+    assassinSrc: '../img/protfolio1.png',
+    soldierSrc: '../img/protfolio2.png',
+    archerSrc: '../img/protfolio3.png',
+    ninjaSrc: '../img/protfolio4.png',
 
 })

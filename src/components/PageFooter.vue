@@ -63,7 +63,6 @@ export default {
 <style lang="scss" scoped>
 .footer {
     background-image: url("../public/img/banner1.png");
-    height: 240px;
     background-size: cover;
     background-position-x: 50%;
     background-position-y: 50%;
