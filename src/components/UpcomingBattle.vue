@@ -2,6 +2,12 @@
 import { store } from '../store';
 
 export default {
+    props: {
+        item: {
+            type: Array,
+            required: true
+        }
+    },
     data() {
         return {
             store: store,
@@ -39,24 +45,31 @@ export default {
                     </div>
                 </div>
                 <div class="col flexed-2">
-                    <div class="col-3">
+                    <div class="col-3" v-for="battle in store.battles" :key="battle.id">
                         <figure class="card-img-container">
-                            <img class="card-img" :src="store.upcomingCard1Src" alt="">
-                            <img class="card-img bg" :src="store.upcomingCard1Src" alt="">
+                            <img class="card-img" :src="battle.imgSrc" alt="">
+                            <img class="card-img bg" :src="battle.imgSrc" alt="">
                         </figure>
                         <div class="body">
-                            <h3>Ninja Warrior Gaming</h3>
-                            <div class="button">
-                                Youtube e message
+                            <h3 class="body-title">{{ battle.name }}</h3>
+                            <div class="btn-container">
+                                <div class="btn">
+                                    <a href="#">
+                                        <img class="btn-img" :src="store.youtubeLogoBlackSrc" alt="">
+                                    </a>
+                                </div>
+                                <div class="btn">
+                                    <a href="#">
+                                        <img class="btn-img" :src="store.messageLogoBlackSrc" alt="">
+                                    </a>
+                                </div>
                             </div>
-                            <div>Time</div>
-                            <div>Date</div>
-                            <div class="Button">View More</div>
-
+                            <div class="body-time">{{ battle.time }}</div>
+                            <div class="body-date">{{ battle.date }}</div>
                         </div>
                     </div>
-                    <div class="col-3"></div>
-                    <div class="col-3"></div>
+                    <!-- <div class="col-3"></div>
+                    <div class="col-3"></div> -->
                 </div>
             </div>
         </div>
@@ -67,12 +80,10 @@ export default {
 .upcoming-battle {
     background-image: url("../public/img/v-bg.png");
     filter: saturate(60%);
-    height: 500px;
 
     .container {
         width: 850px;
         margin: 0 auto;
-        border: 2px solid green;
         padding-top: 40px;
         padding: 20px;
 
@@ -82,7 +93,6 @@ export default {
             gap: 5px;
 
             .col {
-                border: 2px solid blue;
                 gap: 10px;
                 display: flex;
 
@@ -155,6 +165,7 @@ export default {
         gap: 10px;
         justify-content: center;
         align-items: center;
+        border-radius: 10px;
     }
 
     .card-img-container {
@@ -183,6 +194,48 @@ export default {
 
     .body {
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 0 10px;
+    }
+
+    .btn-container {
+        display: flex;
+        gap: 10px;
+    }
+
+    .btn {
+        width: 25px;
+        aspect-ratio: 1;
+        background-color: #07AC50;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn-img {
+        width: 10px;
+        color: #202046;
+    }
+
+    .body-time {
+        font-size: 20px;
+        color: white;
+    }
+
+    .body-date {
+        font-size: 11px;
+        color: white;
+    }
+
+    .body-title {
+        font-size: 20px;
+        font-weight: 700;
+        color: white;
     }
 }
 </style>

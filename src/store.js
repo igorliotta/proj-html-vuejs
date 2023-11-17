@@ -124,4 +124,29 @@ export const store = reactive({
     upcomingCard1Src: '../img/m1.png',
     upcomingCard2Src: '../img/m2.png',
     upcomingCard3Src: '../img/m3.png',
+    youtubeLogoBlackSrc: '../img/youtube-black.svg',
+    messageLogoBlackSrc: '../img/message-black.svg',
+    battles: [
+        {
+            imgSrc: '../img/m1.png',
+            id: '0',
+            date: '1st November, 2022',
+            time: '09.45',
+            name: 'Ninja Warrior Gaming',
+        },
+        {
+            imgSrc: '../img/m2.png',
+            id: '1',
+            date: '1st November, 2022',
+            time: '09.45',
+            name: 'Witch Gaming',
+        },
+        {
+            imgSrc: '../img/m3.png',
+            id: '2',
+            date: '1st November, 2022',
+            time: '09.45',
+            name: 'SkullG Gaming',
+        },
+    ]
 })

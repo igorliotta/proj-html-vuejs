@@ -30,7 +30,7 @@ export default {
     <LiveStreaming />
     <UpcomingMatch />
     <TrendingGames />
-    <UpcomingBattle />
+    <UpcomingBattle :item="battle" />
 </template>
 
 <style lang="scss" scoped>
