@@ -5,6 +5,7 @@ import ExtremeFuture from './ExtremeFuture.vue';
 import LiveStreaming from './LiveStreaming.vue';
 import UpcomingMatch from './UpcomingMatch.vue';
 import TrendingGames from './TrendingGames.vue';
+import UpcomingBattle from './UpcomingBattle.vue';
 
 export default {
     components: {
@@ -13,6 +14,7 @@ export default {
         LiveStreaming,
         UpcomingMatch,
         TrendingGames,
+        UpcomingBattle,
     },
     data() {
         return {
@@ -28,6 +30,7 @@ export default {
     <LiveStreaming />
     <UpcomingMatch />
     <TrendingGames />
+    <UpcomingBattle />
 </template>
 
 <style lang="scss" scoped>

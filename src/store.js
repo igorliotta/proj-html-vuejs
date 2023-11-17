@@ -120,5 +120,8 @@ export const store = reactive({
     soldierSrc: '../img/protfolio2.png',
     archerSrc: '../img/protfolio3.png',
     ninjaSrc: '../img/protfolio4.png',
-
+    upcomingBgSrc: '../img/v-bg.png',
+    upcomingCard1Src: '../img/m1.png',
+    upcomingCard2Src: '../img/m2.png',
+    upcomingCard3Src: '../img/m3.png',
 })
