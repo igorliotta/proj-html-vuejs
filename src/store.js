@@ -194,5 +194,44 @@ export const store = reactive({
             src: '../img/test4.png',
             id: '3',
         },
+    ],
+    articles: [
+        {
+            articleSrc: '../img/s1.png',
+            starGreenSrc: '../img/starGreen.svg',
+            starWhiteSrc: '../img/starWhite.svg',
+            articleName: 'Asus Rog Strix A53',
+            greenPrize: '$970.00',
+            whitePrize: '$999.00',
+            id: '0',
+        },
+        {
+            articleSrc: '../img/s2.png',
+            starGreenSrc: '../img/starGreen.svg',
+            starWhiteSrc: '../img/starWhite.svg',
+            articleName: 'Asus Rog Strix A53',
+            greenPrize: '$970.00',
+            whitePrize: '$999.00',
+            id: '1',
+            optionsIconSrc: ['../img/eye.svg','../img/cartSmall.svg','../img/heart.svg']
+        },
+        {
+            articleSrc: '../img/s3.png',
+            starGreenSrc: '../img/starGreen.svg',
+            starWhiteSrc: '../img/starWhite.svg',
+            articleName: 'Asus Rog Strix A53',
+            greenPrize: '$970.00',
+            whitePrize: '$999.00',
+            id: '2',
+        },
+        {
+            articleSrc: '../img/s4.png',
+            starGreenSrc: '../img/starGreen.svg',
+            starWhiteSrc: '../img/starWhite.svg',
+            articleName: 'Asus Rog Strix A53',
+            greenPrize: '$970.00',
+            whitePrize: '$999.00',
+            id: '3',
+        },
     ]
 })
