@@ -9,6 +9,7 @@ import UpcomingBattle from './UpcomingBattle.vue';
 import TeamMember from './TeamMember.vue';
 import Testimonials from './Testimonials.vue';
 import GammerShop from './GammerShop.vue';
+import LastestNews from './LastestNews.vue';
 
 export default {
     components: {
@@ -21,6 +22,7 @@ export default {
         TeamMember,
         Testimonials,
         GammerShop,
+        LastestNews,
 
     },
     data() {
@@ -41,6 +43,7 @@ export default {
     <TeamMember :item="member" />
     <Testimonials :item="testimonial" />
     <GammerShop :item="article" />
+    <LastestNews :item="lastestNew" />
 </template>
 
 <style lang="scss" scoped>

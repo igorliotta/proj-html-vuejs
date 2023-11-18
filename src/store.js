@@ -128,6 +128,8 @@ export const store = reactive({
     upcomingCard3Src: '../img/m3.png',
     youtubeLogoBlackSrc: '../img/youtube-black.svg',
     messageLogoBlackSrc: '../img/message-black.svg',
+    youtubeLogoGreenSrc: '../img/youtube-green.svg',
+    messageLogoGreenSrc: '../img/message-green.svg',
     battles: [
         {
             imgSrc: '../img/m1.png',
@@ -231,6 +233,28 @@ export const store = reactive({
             articleName: 'Asus Rog Strix A53',
             greenPrize: '$970.00',
             whitePrize: '$999.00',
+            id: '3',
+        },
+    ],
+    lastestNews: [
+        {
+            newSrc: '../img/b1.png',
+            newName: 'Ninja Warrior Gaming',
+            id: '0',
+        },
+        {
+            newSrc: '../img/b2.png',
+            newName: 'Gost Rider Retruns',
+            id: '1',
+        },
+        {
+            newSrc: '../img/b3.png',
+            newName: 'Call of Deauty 4',
+            id: '2',
+        },
+        {
+            newSrc: '../img/b4.png',
+            newName: 'Mortal Combat X',
             id: '3',
         },
     ]
