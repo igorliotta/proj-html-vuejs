@@ -190,6 +190,9 @@ export default {
             align-items: center;
             gap: 15px;
             padding: 11px;
+            background-color: #202046;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
             .news-name {
                 font-weight: 700;
             }

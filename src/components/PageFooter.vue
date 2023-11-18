@@ -147,6 +147,7 @@ export default {
 
 .newsletter {
     margin-top: -30px;
+    border-radius: 5px;
 }
 
 </style>
