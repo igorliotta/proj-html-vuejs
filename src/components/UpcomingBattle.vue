@@ -248,4 +248,10 @@ export default {
         border-radius: 3px;
     }
 }
+
+.upcoming-battle .button:hover {
+    background-color: #202046;
+    color: #02CD7B;
+    border: 1px solid #02CD7B;
+}
 </style>

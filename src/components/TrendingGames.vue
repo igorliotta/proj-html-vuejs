@@ -261,4 +261,14 @@ export default {
 .trending-games .col-3 .body .circle.bg-dark {
     background-color: #152257;
 }
+
+.trending-games .col-3:nth-child(1) .body:hover {
+    background-color: #05CB7C;
+    .game-info {
+        background-color: #05CB7C;
+    }
+}
+.trending-games .col-3:nth-child(1) .body .circle:hover {
+    background-color: #202046;
+}
 </style>

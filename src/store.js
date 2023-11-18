@@ -24,6 +24,7 @@ export const store = reactive({
     previewVideoStreamSrc: '../img/v-small1.png',
     playStreamSrc: '../img/play.svg',
     stream2Src: '../img/v-small2.png',
+    virgoletteSrc: '../img/virgolette.svg',
     menuItems: [
         {
             name: 'Home',

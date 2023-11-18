@@ -270,4 +270,9 @@ export default {
     }
 
 }
+
+.header .introduction .row .col .social-logo-container:nth-child(1):hover,
+.header .introduction .row .col .social-logo-container:nth-child(2):hover{
+    background-color: #05CB7C;
+}
 </style>
