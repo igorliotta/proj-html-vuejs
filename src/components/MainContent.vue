@@ -6,6 +6,7 @@ import LiveStreaming from './LiveStreaming.vue';
 import UpcomingMatch from './UpcomingMatch.vue';
 import TrendingGames from './TrendingGames.vue';
 import UpcomingBattle from './UpcomingBattle.vue';
+import TeamMember from './TeamMember.vue';
 
 export default {
     components: {
@@ -15,6 +16,7 @@ export default {
         UpcomingMatch,
         TrendingGames,
         UpcomingBattle,
+        TeamMember,
     },
     data() {
         return {
@@ -31,6 +33,7 @@ export default {
     <UpcomingMatch />
     <TrendingGames />
     <UpcomingBattle :item="battle" />
+    <TeamMember :item="member" />
 </template>
 
 <style lang="scss" scoped>

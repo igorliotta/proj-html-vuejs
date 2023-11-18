@@ -148,5 +148,31 @@ export const store = reactive({
             time: '09.45',
             name: 'SkullG Gaming',
         },
+    ],
+    members: [
+        {
+            memberSrc: '../img/team1.png',
+            fullname: 'Cristiano Messi',
+            profession: 'CEO/Founder',
+            id: '0',
+        },
+        {
+            memberSrc: '../img/team2.png',
+            fullname: 'Sergio Naymer',
+            profession: 'Programmer',
+            id: '1',
+        },
+        {
+            memberSrc: '../img/team3.png',
+            fullname: 'Antonela Roccuzzo',
+            profession: 'Project Manager',
+            id: '2',
+        },
+        {
+            memberSrc: '../img/team4.png',
+            fullname: 'Lionel Ramos',
+            profession: 'Game Designer',
+            id: '3',
+        },
     ]
 })
