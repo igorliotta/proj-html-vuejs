@@ -35,10 +35,6 @@ export default {
     width: 850px;
     padding: 20px 40px;
     background-color: #202046;
-    position: absolute;
-    bottom: 260px;
-    right: 330px;
-    margin: 0 auto;
 
     .row {
         display: flex;

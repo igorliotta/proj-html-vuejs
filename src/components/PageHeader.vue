@@ -1,11 +1,11 @@
 <script>
 import { store } from '../store';
-// import Games from './Games.vue';
+import Games from './Games.vue';
 
 export default {
-    // components: {
-    //     Games,
-    // },
+    components: {
+        Games,
+    },
     props: {
         item: {
             type: Array,
@@ -76,6 +76,10 @@ export default {
                 <div class="col"></div>
             </div>
         </div>
+        <div class="game">
+            <Games />
+        </div>
+        
     </section>
     <!-- <Games /> -->
 </template>
@@ -83,7 +87,6 @@ export default {
 <style lang="scss" scoped>
 .header {
     background-image: url("../public/img/banner1.png");
-    height: 500px;
     background-size: cover;
     background-position-x: 50%;
     background-position-y: 50%;
@@ -125,6 +128,7 @@ export default {
                 flex-direction: column;
                 gap: 30px;
                 padding-bottom: 50px;
+                
 
                 .title-h4 {
                     margin-top: -20px;
@@ -171,6 +175,12 @@ export default {
                 }
             }
         }
+    }
+
+    .game {
+        display: flex;
+        justify-content: center;
+        margin-bottom: -70px;
     }
 }
 
@@ -258,5 +268,6 @@ export default {
         top: -10px;
         right: -8px;
     }
+
 }
 </style>
