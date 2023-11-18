@@ -106,7 +106,7 @@ export default {
 <style lang="scss" scoped>
 .lastest-news {
     background-color: #191935;
-    padding-bottom: 100px;
+    padding: 40px 20px 60px 20px;
 
     .container {
         width: 850px;

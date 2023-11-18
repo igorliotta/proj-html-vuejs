@@ -1,11 +1,11 @@
 <script>
 import { store } from '../store';
-// import NewsLetter from './NewsLetter.vue';
+import NewsLetter from './NewsLetter.vue';
 
 export default {
-    // components: {
-    //     NewsLetter,
-    // },
+    components: {
+        NewsLetter,
+    },
     props: {
         item: {
             type: Array,
@@ -23,6 +23,7 @@ export default {
 <template>
     <section class="footer">
         <footer class="page-footer">
+            <NewsLetter class="newsletter"/>
             <div class="container">
                 <div class="row">
                     <div class="col start">
@@ -144,5 +145,8 @@ export default {
     }
 }
 
+.newsletter {
+    margin-top: -30px;
+}
 
 </style>
