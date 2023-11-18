@@ -124,9 +124,6 @@ export default {
 
 .testimonial-card {
     position: relative;
-    .testimonial-img {
-        
-    }
     .testimonial-hover {
         color: white;
         display: flex;
