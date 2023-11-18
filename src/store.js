@@ -5,6 +5,8 @@ export const store = reactive({
     headerTitle: 'Are you ready for your next challenge?',
     arrowRightSrc: '../img/image-12.svg',
     arrowLeftSrc: '../img/arrowleft.svg',
+    arrowLeftWhiteSrc: '../img/arrowleft-white.svg',
+    arrowRightWhiteSrc: '../img/arrowright-white.svg',
     playBtnSrc: '../img/image-9.svg',
     playGreenSrc: '../img/play-green.svg',
     menuSearchSrc: '../img/search.svg',
@@ -172,6 +174,24 @@ export const store = reactive({
             memberSrc: '../img/team4.png',
             fullname: 'Lionel Ramos',
             profession: 'Game Designer',
+            id: '3',
+        },
+    ],
+    testimonials: [
+        {
+            src: '../img/test1.png',
+            id: '0',
+        },
+        {
+            src: '../img/test2.png',
+            id: '1',
+        },
+        {
+            src: '../img/test3.png',
+            id: '2',
+        },
+        {
+            src: '../img/test4.png',
             id: '3',
         },
     ]

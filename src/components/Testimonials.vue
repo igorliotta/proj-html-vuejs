@@ -1,0 +1,122 @@
+<script>
+import { store } from '../store';
+
+export default {
+    props: {
+        item: {
+            type: Array,
+            required: true
+        }
+    },
+    data() {
+        return {
+            store: store,
+        }
+    }
+}
+</script>
+
+<template>
+    <section class="testimonials position">
+        <div class="container">
+            <div class="row">
+                <div class="col flexed">
+                    <h4 class="header-small-title">Testimonials</h4>
+                </div>
+                <div class="col">
+                    <div class="header-title">
+                        <h2>What Our Client Say</h2>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="testimonial-card" v-for="testimonial in store.testimonials" :key="testimonial.id">
+                        <figure>
+                            <img class="testimonial-img" :src="testimonial.src" alt="">
+                        </figure>
+                    </div>
+                </div>
+                <div class="btn-container-left">
+                    <a href="#">
+                        <img class="btn-left" :src="store.arrowLeftWhiteSrc" alt="">
+                    </a>
+                </div>
+                <div class="btn-container-right">
+                    <a href="#">
+                        <img class="btn-right" :src="store.arrowRightWhiteSrc" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+<style lang="scss" scoped>
+.testimonials {
+    background-image: url("../public/img/test-grouptwo.png");
+    background-color: #202046;
+    background-size: cover;
+    background-position-y: 20%;
+
+    .container {
+        width: 850px;
+        margin: 0 auto;
+        padding-top: 40px;
+        padding: 40px;
+
+        .row {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            .col {
+                gap: 10px;
+                display: flex;
+            }
+        }
+    }
+
+    .header-small-title {
+        color: #287359;
+    }
+
+    .header-title {
+        font-size: 22px;
+        color: white;
+    }
+
+    .btn-container-right {
+        width: 40px;
+        aspect-ratio: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: #06A549;
+        position: absolute;
+        top: 55%;
+        right: 30%;
+    }
+
+    .btn-container-left {
+        width: 40px;
+        aspect-ratio: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: #343283;
+        position: absolute;
+        top: 55%;
+        left: 29%;
+    }
+
+    .btn-right,
+    .btn-left {
+        width: 15px;
+    }
+}
+
+.position {
+    position: relative;
+}
+</style>
