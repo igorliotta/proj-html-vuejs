@@ -66,6 +66,7 @@ export default {
                             </div>
                             <div class="body-time">{{ battle.time }}</div>
                             <div class="body-date">{{ battle.date }}</div>
+                            <div class="button">View More</div>
                         </div>
                     </div>
                     <!-- <div class="col-3"></div>
@@ -236,6 +237,15 @@ export default {
         font-size: 20px;
         font-weight: 700;
         color: white;
+    }
+
+    .button {
+        background-color: #06CB7C;
+        color: #202046;
+        font-size: 11px;
+        font-weight: 700;
+        padding: 6px 14px;
+        border-radius: 3px;
     }
 }
 </style>
