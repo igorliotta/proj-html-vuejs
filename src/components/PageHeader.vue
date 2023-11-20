@@ -15,8 +15,20 @@ export default {
     data() {
         return {
             store: store,
+            // open: false,
         }
-    }
+    },
+//  methods: {
+//     showModal(offcanvas) {
+//       console.log('show modal')
+//       this.open = !this.open;
+      
+//     },
+    // closeModal() {
+    //   console.log('close modal')
+    //   this.open = false
+    // }
+//   }
 }
 
 </script>
@@ -29,10 +41,27 @@ export default {
                     <img class="logo-img" :src="store.menuLogoSrc" alt="">
                 </div>
                 <div class="navbar-items">
-                    <ul class="col growed" v-for="menuItem in store.menuItems" :key="menuItem.id">
-                        <li class="navbar">
-                            <span>{{ menuItem.name }}</span>
-                            <img class="menu-icon" :src="menuItem.iconSrc" alt="">
+                    <ul class="col growed">
+                        <li class="navbar" v-for="menuItem in store.menuItems" :key="menuItem.id">
+                            <div class="name-icon">
+                                <span class="name">{{ menuItem.name }}</span>
+                                <img class="menu-icon" :src="menuItem.iconSrc" alt="" >
+                            </div>
+                            <div class="offcanvas">
+                                <h4>About Us</h4>
+                                <div class="separator"></div>
+                                <h4>Matches</h4>
+                                <div class="separator"></div>
+                                <h4>Team ooo</h4>
+                                <div class="separator"></div>
+                                <h4>Squad</h4>
+                                <div class="separator"></div>
+                                <h4>Squad Details</h4>
+                                <div class="separator"></div>
+                                <h4>Coming Soon</h4>
+                                <div class="separator"></div>
+                                <h4>404</h4>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -69,7 +98,7 @@ export default {
                             </a>
                         </div>
                         <div class="circle">
-                                <img class="play-src" :src="store.playBtnSrc" alt="">
+                            <img class="play-src" :src="store.playBtnSrc" alt="">
                         </div>
                     </div>
                 </div>
@@ -79,7 +108,7 @@ export default {
         <div class="game">
             <Games />
         </div>
-        
+
     </section>
     <!-- <Games /> -->
 </template>
@@ -128,7 +157,7 @@ export default {
                 flex-direction: column;
                 gap: 30px;
                 padding-bottom: 50px;
-                
+
 
                 .title-h4 {
                     margin-top: -20px;
@@ -153,6 +182,7 @@ export default {
                     padding: 5px 16px;
                     border-radius: 5px;
                 }
+
                 .arrow-src,
                 .play-src {
                     width: 10px;
@@ -169,6 +199,7 @@ export default {
                     justify-content: center;
                     align-items: center;
                 }
+
                 .btn-container {
                     display: flex;
                     gap: 5px;
@@ -213,11 +244,25 @@ export default {
             color: white;
             font-size: 10px;
             display: flex;
+            flex-direction: column;
             justify-content: center;
-            align-items: center;
             gap: 5px;
             padding: 3px 10px;
-            text-transform: uppercase;
+
+            .name {
+                text-transform: uppercase;
+            }
+
+            .name-icon {
+                display: flex;
+                gap: 5px;
+            }
+
+            .offcanvas {
+                display: none;
+            }
+
+          
         }
     }
 
@@ -272,7 +317,34 @@ export default {
 }
 
 .header .introduction .row .col .social-logo-container:nth-child(1):hover,
-.header .introduction .row .col .social-logo-container:nth-child(2):hover{
+.header .introduction .row .col .social-logo-container:nth-child(2):hover {
     background-color: #05CB7C;
+}
+
+.page-header .col.growed .navbar:nth-child(2) .off-canvas {
+    display: block;
+    background-color: #202046;
+    color: #3B7D65;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    position: absolute;
+    top: 60px;
+    font-size: 15px;
+}
+.page-header .col.growed .navbar:nth-child(2) .name-icon {
+   position: relative;
+}
+
+.separator {
+    height: 1px;
+    background-color: #3B7D65;
+}
+
+.page-header .col.growed .navbar:nth-child(1) .name-icon,
+.page-header .col.growed .navbar:nth-child(1) .menu-icon{
+    color: #3B7D65;
 }
 </style>
